@@ -59,5 +59,10 @@ namespace SecretSpy
             // -1 becoause that's how we started in the constructor.
             return (maxSize - 1 == top); 
         }
+        // Get the completed stack Array if all  the Message Array inv
+        public int[] getStackArray() {
+
+            return stackArray; 
+        } 
     }
 }

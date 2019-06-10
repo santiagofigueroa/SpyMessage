@@ -3,61 +3,88 @@
 namespace SecretSpy
 {
 
-    class Program
+    public class Program
     {
         public static int Message { get; set; }
         public static int Spy { get; set; }
 
+        public Stack stack;
 
-        static int Main(string[] args)
+        int Main(string[] args)
         {
 
+
             Console.WriteLine("Welcome to the Spy Program");
+            //IndexCheck's that 
             int Message = 0;
-            int[] array = new int[8];
+            int[] messageArray = new int[8];
             Console.WriteLine("Please Enter Message !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            Console.WriteLine("Enter each digit and pres enter.");
             Console.WriteLine();
 
             while (Message < 9)
             {
-                if (int.TryParse(Console.ReadLine(), out array[Message]))
+                if (int.TryParse(Console.ReadLine(), out messageArray[Message]))
                 {
-                    Message++;
+                    if (messageArray[Message] >= 0 && 10 < messageArray[Message])
+                    {
+                        Message++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please only enter number between 0 and 9 ONLY !");
+                    }
                 }
                 else
                 {
                     Console.WriteLine("You didn't enter a number! Please enter again!");
                 }
-                    
+
             }
 
-            //Message = Console.Read();
-            //if (array.Length > 0 )
-            //{
-            //    object obj = new object();
+            #region Spy
 
-            //    Console.WriteLine("Please enter a message");  
-            //} 
-            //if (!Validate) { }
-            //for (int i = 0; i < Message; i++)
-            //{
-            //    array[i] = int.Parse(Console.ReadLine());
-            //    Console.WriteLine(array[i]);
-            //}
             int spyIndex = 0;
             int[] spy = new int[3];
-            Console.WriteLine("Please Enter Spy Number");
+            Console.WriteLine("Please Enter Spy Secret Number");
 
             while (spyIndex < 4)
             {
                 if (int.TryParse(Console.ReadLine(), out spy[spyIndex]))
-                    spyIndex++;
+                {
+                    if (messageArray[spyIndex] >= 0 && 10 < messageArray[spyIndex])
+                    {
+                        spyIndex++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please only enter number between 0 and 9 ONLY !");
+                    }
+
+                    
+                }
                 else
+                {
                     Console.WriteLine("You didn't enter a number! Please enter again!");
+                }
             }
             Console.Read();
+            #endregion Spy 
 
-            return 0;
+            // Creates a new  stack object and set size to the size of the 'Message array' array.
+            #region Array to Stack plus comparison. 
+            stack = new Stack(messageArray.Length);
+            //for ()
+            //{
+            //    switch
+
+            //}
+
+                #endregion Array to Stack plus comparison. 
+
+
+
+                return 0;
+            }
         }
     }
-}

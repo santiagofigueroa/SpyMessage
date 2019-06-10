@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\santiagofigueroa\\Documents\\Visual Studio 2017\\Projects\\SecretSpy\\SecretSpy\\SecretSpy.csproj",
+      "projectUniqueName": "D:\\Test\\New folder\\SecretSpy\\SecretSpy\\SecretSpy.csproj",
       "projectName": "SecretSpy",
-      "projectPath": "C:\\Users\\santiagofigueroa\\Documents\\Visual Studio 2017\\Projects\\SecretSpy\\SecretSpy\\SecretSpy.csproj",
+      "projectPath": "D:\\Test\\New folder\\SecretSpy\\SecretSpy\\SecretSpy.csproj",
       "packagesPath": "C:\\Users\\santiagofigueroa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\santiagofigueroa\\Documents\\Visual Studio 2017\\Projects\\SecretSpy\\SecretSpy\\obj\\",
+      "outputPath": "D:\\Test\\New folder\\SecretSpy\\SecretSpy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
