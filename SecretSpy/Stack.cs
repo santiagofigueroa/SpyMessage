@@ -10,9 +10,9 @@ namespace SecretSpy
     /// </summary>
    public class Stack
     {
-        private int maxSize;
-        private int[] stackArray;
-        private int top;
+        private  int maxSize;
+        private  int[] stackArray;
+        private  int top;
 
         public Stack(int size)
         {
