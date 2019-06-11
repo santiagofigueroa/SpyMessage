@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace SecretSpy
 {
@@ -7,7 +8,7 @@ namespace SecretSpy
     {
         public static int Message { get; set; }
         public static int Spy { get; set; }
-        public static int[] messageArray;
+        public static int[] messageArray  = Enumerable.Range(1,9).ToArray();
 
         public static Stack stack;
 
@@ -20,12 +21,15 @@ namespace SecretSpy
             Console.WriteLine("Please Enter Message !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             Console.WriteLine("Enter each digit and pres enter.");
             Console.WriteLine();
+           
 
+            // Checks the length only.
             while (Message < 9)
             {
                 if (int.TryParse(Console.ReadLine(), out messageArray[Message]))
                 {
-                    if (messageArray[Message] >= 0 && 10 < messageArray[Message])
+                    int compare = messageArray[Message];
+                    if(compare > -1 && compare < 10)
                     {
                         Message++;
                     }
@@ -51,7 +55,7 @@ namespace SecretSpy
             {
                 if (int.TryParse(Console.ReadLine(), out spy[spyIndex]))
                 {
-                    if (messageArray[spyIndex] >= 0 && 10 < messageArray[spyIndex])
+                    if (spyIndex >= 0 && 10 < spyIndex)
                     {
                         spyIndex++;
                     }
