@@ -688,7 +688,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\santiagofigueroa\\.nuget\\packages\\": {},
+    "C:\\Users\\Jsoe\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -697,22 +697,21 @@
       "projectUniqueName": "D:\\Test\\New folder\\SecretSpy\\SecretSpy\\SecretSpy.csproj",
       "projectName": "SecretSpy",
       "projectPath": "D:\\Test\\New folder\\SecretSpy\\SecretSpy\\SecretSpy.csproj",
-      "packagesPath": "C:\\Users\\santiagofigueroa\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Jsoe\\.nuget\\packages\\",
       "outputPath": "D:\\Test\\New folder\\SecretSpy\\SecretSpy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\santiagofigueroa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jsoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "netcoreapp2.1": {

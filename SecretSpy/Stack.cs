@@ -10,9 +10,9 @@ namespace SecretSpy
     /// </summary>
    public class Stack
     {
-        private  int maxSize;
-        private  int[] stackArray;
-        private  int top;
+        private static int maxSize;
+        private static int[] stackArray;
+        private  static int top;
 
         public Stack(int size)
         {
@@ -34,11 +34,11 @@ namespace SecretSpy
             }
         }
 
-        private int pop()
+        public int pop()
         {
             if (isEmpty())
             {
-                Console.WriteLine("Is Empty");
+                Console.WriteLine(" Stack Is Empty");
                 return -1; 
             }else {
                 // do copy of old_top make the top Minus.  
@@ -49,16 +49,17 @@ namespace SecretSpy
             }
         }
 
-        private bool isEmpty()
+        private static bool isEmpty()
         {
             return (top == -1); 
         }
 
-        private bool isFull()
+        private static bool isFull()
         {
             // -1 becoause that's how we started in the constructor.
             return (maxSize - 1 == top); 
         }
+
         // Get the completed stack Array if all  the Message Array inv
         public int[] getStackArray() {
 
